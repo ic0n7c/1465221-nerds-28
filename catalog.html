@@ -26,7 +26,56 @@
     <main>
         <section>
             <h2>Стоимость</h2>
-            <!-- Здесь будет форма фильтра -->
+            <section>
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li>
+
+                                <input type="radio" name="net-type" id="filter-adaptive" value="adaptive" checked>
+                                <label for="filter-adaptive">Адаптивная</label>
+                            </li>
+                            <li>
+
+                                <input type="radio" name="net-type" id="filter-fixed" value="fixed">
+                                <label for="filter-fixed">Фиксированная</label>
+                            </li>
+                            <li>
+
+                                <input type="radio" name="net-type" id="filter-flexed" value="flexed">
+                                <label for="filter-flexed">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="slider" id="filter-slider" checked>
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="advantages" id="filter-advantages">
+                                <label for="filter-advantages">Блок преимуществ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="news" id="filter-news" checked>
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="trashcan" id="filter-trashcan">
+                                <label for="filter-trashcan">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
+            </section>
         </section>
         <section>
             <ul>
@@ -63,6 +112,19 @@
                 <a href="tel: +78122757575">тел. +7 (812) 275-75-75</a>
             </p>
             <a href="">Напишите нам</a>
+        </section>
+        <section>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <h1>Напишите нам</h1>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name-surname" id="name" value="Имя Фамилия">
+                <label for="email">Ваш e-mail:</label>
+                <input type="text" name="email" id="email" value="email@example.com">
+                <label for="yourmessage">Текст письма:</label>
+                <textarea rows="10" id="yourmessage">В свободной форме</textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <button type="button">Закрыть</button>
         </section>
         <section>
             <h2>Давайте дружить, это выгодно!</h2>
